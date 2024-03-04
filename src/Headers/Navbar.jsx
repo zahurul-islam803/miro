@@ -2,7 +2,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import { TbWorld } from "react-icons/tb";
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100 text-lg">
+    <div className="navbar bg-base-100 lg:text-lg border-b">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -23,7 +23,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm text-lg dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-sm lg:text-lg dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
               <a>Product</a>
@@ -69,7 +69,7 @@ const Navbar = () => {
         <a className="text-4xl font-bold">miro</a>
       </div>
       <div className="navbar-start hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 text-lg">
+        <ul className="menu menu-horizontal px-1 lg:text-lg">
           <li>
             <details>
               <summary>Product</summary>
@@ -117,14 +117,14 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <div className="navbar-end space-x-8">
-        <div className="flex justify-center items-center gap-2">
-          <TbWorld  size={40}/>
+      <div className="navbar-end space-x-2 lg:space-x-8">
+        <div className="flex justify-center items-center lg:gap-2">
+          <TbWorld  className="lg:text-[40px]"/>
           <a className="">EN</a>
         </div>
         <a className="">Contact Sales</a>
         <a className="">Login</a>
-        <div className="flex justify-center items-center gap-2 bg-[#4262FF] text-white py-2 px-4 rounded-badge">
+        <div className="flex justify-center items-center lg:gap-2 bg-[#4262FF] text-white py-2 px-4 rounded-badge">
           <a className="">Sign Up Free</a>
           <a>
             <FaArrowRight />
