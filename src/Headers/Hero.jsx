@@ -3,7 +3,7 @@ import { FaStar, FaStarHalfAlt, FaGooglePlusG } from "react-icons/fa";
 import heroImg from '../assets/headerimage-without-text.png'
 const Hero = () => {
   return (
-    <div className="flex lg:flex-row flex-col justify-center items-center lg:gap-32 gap-8 mt-8">
+    <div className="flex lg:flex-row flex-col justify-between items-center lg:gap-6 gap-8 mt-8">
       <div>
         <h1 className="text-6xl font-bold">
           Take ideas from <br /> better to best
@@ -45,7 +45,7 @@ const Hero = () => {
         </div>
       </div>
       <div>
-        <img src={heroImg} className="lg:w-[800px]" alt="hero image" />
+        <img src={heroImg} className="lg:w-[1000px]" alt="hero image" />
       </div>
     </div>
   );
